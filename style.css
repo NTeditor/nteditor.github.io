@@ -3,11 +3,28 @@
 	padding: 0;
 }
 
+body {
+	font-family: 'Open Sans';
+}
+
+.text {
+	margin-top: 80px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-block-end: 100px;
+}
+
+
 header{
-	background: linear-gradient(#098c7d, #098c7d);
+	background: linear-gradient(#098c7d, #098c7d); 
+	position: fixed; 
+	top: 0; 
+	z-index: 100;   
+	width: 100%; 
 }
 
 ul{
+	margin-right: 200px;
 	list-style: none;
 	marin: 0;
 	padding: 20px;
@@ -20,15 +37,12 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
-	color: #000000;
-}
-
 li{
 	display: inline;
 }
 
 .logo-img{
+	margin-left: 180px;
 	width: 40%;
-	height: 40%;
+	width: 40;
 }
