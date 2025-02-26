@@ -1,48 +1,68 @@
-*{
-	margin: 0;
-	padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: Open Sans;
 }
 
-.text {
-	margin-top: 80px;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin-block-end: 100px;
+header {  
+	background-color: white;  
+	position: fixed;  
+	top: 0;  
+	z-index: 100;  
+	width: 100%;  
 }
 
 
-header{
-	background: linear-gradient(#098c7d, #098c7d); 
-	position: fixed; 
-	top: 0; 
-	z-index: 100;   
-	width: 100%; 
+
+
+.header-container {
+	display: grid;
+	gap: 0px;
+
+	grid-template-columns: minmax(1px, 15%) 0.1fr minmax(150px, 13%) minmax(0px, 70%) minmax(140px, 15%) minmax(80px, 10%) minmax(1px, 15%);
+
+	grid-template-rows: 83px;
 }
 
-ul{
-	margin-right: 200px;
-	list-style: none;
-	marin: 0;
-	padding: 20px;
+.header-element {
+	background-color: #098c7d;
 }
 
-a{
+.head-logo {
+	width: 80px;
+	height: 80px;
+
+}
+
+.head-text {
+	padding-top: 1px;
 	font-size: 20px;
-	padding: 20px;
 	color: #FFFFFF;
 	text-decoration: none;
+	text-align: left;
 }
 
-li{
-	display: inline;
+.head-link {
+	padding-top: 10px;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
 }
 
-.logo-img{
-	margin-left: 180px;
-	width: 40%;
-	width: 40;
+.header-fix {
+	display: grid;
+	gap: 0px;
+
+
+	grid-template-rows: 80px;
 }
