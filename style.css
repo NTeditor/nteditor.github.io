@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 .overpass-<uniquifier> {
   font-family: "Overpass", serif;
   font-optical-sizing: auto;
@@ -19,6 +20,10 @@ header {
 	top: 0;  
 	z-index: 100;  
 	width: 100%;  
+}
+
+a {
+	text-decoration: none;
 }
 
 
@@ -84,4 +89,36 @@ header {
 
 .text-2 {
 	text-align: right;
+}
+
+
+@media (max-width: 469px) {
+	.header-container {
+		grid-template-columns: 0px 60px 0px minmax(0px, 70%) minmax(140px, 15%) minmax(80px, 10%) 10px;
+
+		grid-template-rows: 63px;
+	}
+
+	.head-text {
+		visibility: hidden;
+	}
+
+	.head-link {
+		padding-top: 5px;
+		font-size: 17px;
+	}
+
+	.head-logo {
+		width: 60px;
+		height: 60px;
+
+	}
+
+	.text {
+		grid-template-columns: 10px auto 10px;
+	}
+
+	.header-fix {
+		grid-template-rows: 60px;
+	}
 }
