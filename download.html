@@ -1,76 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" >
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="style_download.css">
-	<link rel="icon" href="logo.png" type="image/x-icon">
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/microg-core.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/download.css">
+    <title>microG Installer Download</title>
 </head>
 
 <body>
 
-	<header>
-		<div class="header-container">
-			<div class="header-element"></div>
-			<div class="header-element"><img class="head-logo" src="logo.png" alt=""></div>
-			<span class="header-element"><p class="head-text">microG Installer</p></span>
-			<div class="header-element"></div>
-			<div class="header-element head-link"><a class="head-link" target="_blank" href="https://microg.org/"><p>microG Project</p></a></div>
-			<div class="header-element head-link"><a class="head-link" href="./download.html"><p>Скачать</p></a></div>
-			<div class="header-element"></div>
-		</div>
+    <header>
+		<nav class="navbar shadow-none fixed-top navbar-expand-lg nav-color" data-bs-theme="dark">
+			<div class="container">
+				<a href="/index.html" class="navbar-brand">
+					<img src="/img/microg-core.png" alt="Логотип microG" class="d-inline-block align-text-top" height="25">
+					microG installer
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="https://microg.org/" class="nav-link active" target="_blank">microG Project</a>
+						</li>
+						<li class="nav-item">
+							<a href="/download.html" class="nav-link active">Скачать</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
-	<div class="header-fix">
-		<div>	</div>
-	</div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Только microG</h5>
+                            <p class="card-text">Содержимое: microG Services, microG Companion, MapLibre API</p>
+                            
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger"><a class="dropdown-item" href="#">Последняя версия</a></button>
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 2</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 1</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">microG + F-Droid</h5>
+                            <p class="card-text">Содержимое: microG Services, microG Companion, F-Droid, MapLibre API</p>
 
-	<main class="menu">
-		<div><h2>Загрузки</h2></div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger"><a class="dropdown-item" href="#">Последняя версия</a></button>
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 2</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 1</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">microG + Droid-ify</h5>
+                            <p class="card-text">Содержимое: microG Services, microG Companion, Droid-ify, MapLibre API.</p>
 
-
-		<div class="container">
-			<div><!--Пустой сегмент--></div>
-
-			<div class="container">
-				<div class="microg blue">
-					<img src="https://microg.org/img/service_256px.png">
-					<p>Только microG</p>
-					<div class="download-1">
-						<a href="#">Скачать</a>
-					</div>
-				</div>
-				
-
-				<div class="fdroid blue">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/F-Droid_Logo_4.svg">
-					<p>microG + F-Droid</p>
-					<div class="download-2">
-						<a href="#">Скачать</a>
-					</div>
-				</div>
-
-
-				<div class="droid blue">
-					<img src="https://f-droid.org/repo/com.looker.droidify/en-US/icon_lApsnfhrMqGkCaW-IdnYwx86CUjdTutncPvXPJythaM=.png">
-					<p>microG + Droid-ify</p>
-					<div class="download-3">
-						<a href="#">Скачать</a>
-					</div>
-				</div>
-
-			</div>
-
-			<div><!--Пустой сегмент--></div>
-		</div>
-	</main>
-
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger"><a class="dropdown-item" href="#">Последняя версия</a></button>
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 2</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">v1.1 pre-release 1</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
-
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/darkmode.js"></script>
 </body>
 </html>
