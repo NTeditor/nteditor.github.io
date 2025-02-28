@@ -1,1 +1,1 @@
-Сайт [microG installer]{https://github.com/NTeditor/MicroG-Installer}
+Сайт [microG installer](https://github.com/NTeditor/MicroG-Installer)
