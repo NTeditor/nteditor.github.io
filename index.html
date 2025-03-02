@@ -1,71 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru" data-bs-theme="auto">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="/img/microg-core.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/style.css">
-	<script type="text/javascript" src="/js/darkmode.js"></script>
-	<title>microG installer</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/img/microg-core.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script type="text/javascript" src="/js/darkmode.js"></script>
+		<title>microG installer</title>
+	</head>
 
-<body>
-	
-	<header>
-		<nav class="navbar shadow-none fixed-top navbar-expand-lg nav-color" data-bs-theme="dark">
-			<div class="container">
-				<a href="/index.html" class="navbar-brand">
-					<img src="/img/microg-core.png" alt="Логотип microG" class="d-inline-block align-text-top" height="25">
-					microG installer
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a href="https://microg.org/" class="nav-link active" target="_blank">microG Project</a>
-						</li>
-						<li class="nav-item">
-							<a href="/download.html" class="nav-link active">Скачать</a>
-						</li>
-					</ul>
+	<body>
+		<header>
+			<nav
+				class="navbar shadow-none fixed-top navbar-expand-lg nav-color"
+				data-bs-theme="dark"
+			>
+				<div class="container">
+					<a href="/index.html" class="navbar-brand">
+						<img
+							src="/img/microg-core.png"
+							alt="Логотип microG"
+							class="d-inline-block align-text-top"
+							height="25"
+						/>
+						microG installer
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse justify-content-end"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a
+									href="https://microg.org/"
+									class="nav-link active"
+									target="_blank"
+									>microG Project</a
+								>
+							</li>
+							<li class="nav-item">
+								<a href="/download.html" class="nav-link active">Скачать</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container">
+			<h1 class="d-none">microG Magisk модуль</h1>
+			<h2 class="d-none">Скачать microG Magisk модуль</h2>
+			<h3 class="d-none">
+				Скачать microG Magisk модуль вместо google сервисов
+			</h3>
+			<h4>Что это?</h4>
+			<p>Установщик microG для Magisk (В будущем возможно для TWRP).</p>
+			<h4>Как установить?</h4>
+			<p>
+				1) Установить модуль, после перезагрузки и разблокировки экрана
+				рекомендуется подождать несколько секунд.<br />
+				2) Зайдите в приложение "Настройки microG", выберите пункт
+				"Рабоспособность" и проверьте чтобы все чекбоксы были активны.<br />
+				2.1) Если <b>"Система подменяет подписи"</b> не активно установите
+				<a target="_blank" href="https://github.com/whew-inc/FakeGApps"
+					>Xposed модуль FakeGapps</a
+				>, актуальные сборки LineageOS имеют встроенные патчи. (Старые сборку
+				могут иметь устаревшие патчи, используйте FakeGapps). 4) Включи нужные
+				вам компоненты в главном меню "Настройки microG".
+			</p>
+			<h4>Баги</h4>
+			<p>
+				1. При удалении модуля устройства может неожиданно перезагрузится
+				(перезагрузка происходит только один раз)
+			</p>
+		</main>
+		<footer class="container">
+			<div class="row">
+				<div class="col">
+					<h4>Баг репорт</h4>
+					<p>
+						При нахождении багов сайта сообщите
+						<a href="https://github.com/NTeditor/nteditor.github.io"
+							>В GitHub сайта</a
+						>.<br />
+						При нахождении багов Magisk модуля сообщите
+						<a href="https://github.com/NTeditor/MicroG-Installer"
+							>В GitHub модуля</a
+						>.
+					</p>
 				</div>
 			</div>
-		</nav>
-	</header>
+		</footer>
 
-	<main class="container">
-		<h1 class="d-none">microG Magisk модуль</h1>
-		<h2 class="d-none">Скачать microG Magisk модуль</h2>
-		<h3 class="d-none">Скачать microG Magisk модуль вместо google сервисов</h3>
-		<h4>Что это?</h4>
-		<p>Установщик microG для Magisk (В будущем возможно для TWRP).</p>
-		<h4>Как установить?</h4>
-		<p> 1) Установить модуль, после перезагрузки и разблокировки экрана рекомендуется подождать несколько секунд.<br>
-		2) Зайдите в приложение "Настройки microG", выберите пункт "Рабоспособность" и проверьте чтобы все чекбоксы были активны.<br>
-		2.1) Если <b>"Система подменяет подписи"</b> не активно установите <a target="_blank" href="https://github.com/whew-inc/FakeGApps">Xposed модуль FakeGapps</a>, актуальные сборки LineageOS имеют встроенные патчи. (Старые сборку могут иметь устаревшие патчи, используйте FakeGapps).
-		4) Включи нужные вам компоненты в главном меню "Настройки microG".		
-	</p>
-	<h4>Баги</h4>
-	<p>1. При удалении модуля устройства может неожиданно перезагрузится (перезагрузка происходит только один раз)</p>
-</main>
-	<footer class='container'>
-		<div class="row">
-			<div class='col'>
-				<h4>Баг репорт</h4>
-				<p>При нахождении багов сайта сообщите <a href="https://github.com/NTeditor/nteditor.github.io">В GitHub сайта</a>.<br>
-				При нахождении багов Magisk модуля сообщите <a href="https://github.com/NTeditor/MicroG-Installer">В GitHub модуля</a>.</p>
-			</div>
-		</div>
-	</footer>
-
-
-	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
