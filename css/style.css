@@ -1,15 +1,18 @@
-:root {
-	--microg-color: #009486;
+.nav-color {
+	background-color: #009486;
 }
 
-.nav-color {
-	background-color: var(--microg-color);
+@font-face {
+	font-family: 'Fira';
+	src: url(/Font/FiraSans-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+	font-size: 1rem;
 }
 
 body {
 	padding-top: 80px;
-	font-family: 'Montserrat', serif;
+	font-family: 'Fira', sans-serif;
 	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
 }
